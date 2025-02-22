@@ -49,7 +49,7 @@
             border-radius: 5px;
             box-sizing: border-box;
         }
-        input[type="submit"] {
+        #submit{
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -82,13 +82,13 @@
 
             <!-- Have you ever lived with a Dog before? Field -->
             <label for="dogExperience">
-                <input type="checkbox" id="dogExperience" name="dogExperience">
+                <input type="checkbox" id="dogExperience" name="dogExperience" value='yes'>
                 Have you ever lived with a Dog before?
             </label>
 
             <!-- Preferred Breeds Field -->
-            <label for="breeds">Please select your preferred breeds</label>
-            <select id="breeds" name="breeds" class="multi-select" multiple required>
+            <label for="multiSelect">Please select your preferred breeds</label>
+            <select id="breeds" name="multiSelect" class="multiSelect" multiple>
                 <option value="labrador">Labrador Retriever</option>
                 <option value="germanShepherd">German Shepherd</option>
                 <option value="bulldog">Bulldog</option>
@@ -97,7 +97,7 @@
             </select>
 
             <!-- Submit Button -->
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" id='submit'>
         </form>
     </div>
 </body>
